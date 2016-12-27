@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary      = "mediator"
 
   s.description  = <<-DESC
-                    mediator
+                    mediator for module
                    DESC
 
   s.homepage     = "https://github.com/sofach/SFMediator"
