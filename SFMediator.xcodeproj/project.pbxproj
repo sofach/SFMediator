@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD12285A1E1269920088AE34 /* SFMediator.podspec in Resources */ = {isa = PBXBuildFile; fileRef = AD1228591E1269920088AE34 /* SFMediator.podspec */; };
 		ADFE46761E12386D008260AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46751E12386D008260AB /* main.m */; };
 		ADFE46791E12386D008260AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46781E12386D008260AB /* AppDelegate.m */; };
 		ADFE467C1E12386D008260AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE467B1E12386D008260AB /* ViewController.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1228591E1269920088AE34 /* SFMediator.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SFMediator.podspec; sourceTree = "<group>"; };
 		ADFE46711E12386D008260AB /* SFMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFE46751E12386D008260AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADFE46771E12386D008260AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		ADFE46681E12386D008260AB = {
 			isa = PBXGroup;
 			children = (
+				AD1228591E1269920088AE34 /* SFMediator.podspec */,
 				ADFE46731E12386D008260AB /* SFMediator */,
 				ADFE468D1E12386D008260AB /* SFMediatorTests */,
 				ADFE46981E12386D008260AB /* SFMediatorUITests */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD12285A1E1269920088AE34 /* SFMediator.podspec in Resources */,
 				ADFE46841E12386D008260AB /* LaunchScreen.storyboard in Resources */,
 				ADFE46811E12386D008260AB /* Assets.xcassets in Resources */,
 				ADFE467F1E12386D008260AB /* Main.storyboard in Resources */,
