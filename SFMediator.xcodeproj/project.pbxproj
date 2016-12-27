@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADFE46761E12386D008260AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46751E12386D008260AB /* main.m */; };
+		ADFE46791E12386D008260AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46781E12386D008260AB /* AppDelegate.m */; };
+		ADFE467C1E12386D008260AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE467B1E12386D008260AB /* ViewController.m */; };
+		ADFE467F1E12386D008260AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFE467D1E12386D008260AB /* Main.storyboard */; };
+		ADFE46811E12386D008260AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFE46801E12386D008260AB /* Assets.xcassets */; };
+		ADFE46841E12386D008260AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFE46821E12386D008260AB /* LaunchScreen.storyboard */; };
+		ADFE468F1E12386D008260AB /* SFMediatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE468E1E12386D008260AB /* SFMediatorTests.m */; };
+		ADFE469A1E12386D008260AB /* SFMediatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46991E12386D008260AB /* SFMediatorUITests.m */; };
+		ADFE46AA1E1238EF008260AB /* SFMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46A91E1238EF008260AB /* SFMediator.m */; };
+		ADFE46AD1E12401B008260AB /* SFMediatorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */; };
+		ADFE46B01E12528B008260AB /* DemoMediatorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46AF1E12528B008260AB /* DemoMediatorTarget.m */; };
+		ADFE46B31E125322008260AB /* SFMediator+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46B21E125322008260AB /* SFMediator+Demo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFE468B1E12386D008260AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFE46691E12386D008260AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFE46701E12386D008260AB;
+			remoteInfo = SFMediator;
+		};
+		ADFE46961E12386D008260AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADFE46691E12386D008260AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADFE46701E12386D008260AB;
+			remoteInfo = SFMediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADFE46711E12386D008260AB /* SFMediator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFMediator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE46751E12386D008260AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADFE46771E12386D008260AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADFE46781E12386D008260AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADFE467A1E12386D008260AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADFE467B1E12386D008260AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADFE467E1E12386D008260AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADFE46801E12386D008260AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADFE46831E12386D008260AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADFE46851E12386D008260AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFE468A1E12386D008260AB /* SFMediatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFMediatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE468E1E12386D008260AB /* SFMediatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMediatorTests.m; sourceTree = "<group>"; };
+		ADFE46901E12386D008260AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFE46951E12386D008260AB /* SFMediatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFMediatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE46991E12386D008260AB /* SFMediatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMediatorUITests.m; sourceTree = "<group>"; };
+		ADFE469B1E12386D008260AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFE46A81E1238EF008260AB /* SFMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMediator.h; sourceTree = "<group>"; };
+		ADFE46A91E1238EF008260AB /* SFMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMediator.m; sourceTree = "<group>"; };
+		ADFE46AB1E12401B008260AB /* SFMediatorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMediatorTarget.h; sourceTree = "<group>"; };
+		ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMediatorTarget.m; sourceTree = "<group>"; };
+		ADFE46AE1E12528B008260AB /* DemoMediatorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMediatorTarget.h; sourceTree = "<group>"; };
+		ADFE46AF1E12528B008260AB /* DemoMediatorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMediatorTarget.m; sourceTree = "<group>"; };
+		ADFE46B11E125322008260AB /* SFMediator+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMediator+Demo.h"; sourceTree = "<group>"; };
+		ADFE46B21E125322008260AB /* SFMediator+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFMediator+Demo.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADFE466E1E12386D008260AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46871E12386D008260AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46921E12386D008260AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADFE46681E12386D008260AB = {
+			isa = PBXGroup;
+			children = (
+				ADFE46731E12386D008260AB /* SFMediator */,
+				ADFE468D1E12386D008260AB /* SFMediatorTests */,
+				ADFE46981E12386D008260AB /* SFMediatorUITests */,
+				ADFE46721E12386D008260AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADFE46721E12386D008260AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE46711E12386D008260AB /* SFMediator.app */,
+				ADFE468A1E12386D008260AB /* SFMediatorTests.xctest */,
+				ADFE46951E12386D008260AB /* SFMediatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADFE46731E12386D008260AB /* SFMediator */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE46A71E1238DD008260AB /* lib */,
+				ADFE46771E12386D008260AB /* AppDelegate.h */,
+				ADFE46781E12386D008260AB /* AppDelegate.m */,
+				ADFE46AE1E12528B008260AB /* DemoMediatorTarget.h */,
+				ADFE46AF1E12528B008260AB /* DemoMediatorTarget.m */,
+				ADFE46B11E125322008260AB /* SFMediator+Demo.h */,
+				ADFE46B21E125322008260AB /* SFMediator+Demo.m */,
+				ADFE467A1E12386D008260AB /* ViewController.h */,
+				ADFE467B1E12386D008260AB /* ViewController.m */,
+				ADFE467D1E12386D008260AB /* Main.storyboard */,
+				ADFE46801E12386D008260AB /* Assets.xcassets */,
+				ADFE46821E12386D008260AB /* LaunchScreen.storyboard */,
+				ADFE46851E12386D008260AB /* Info.plist */,
+				ADFE46741E12386D008260AB /* Supporting Files */,
+			);
+			path = SFMediator;
+			sourceTree = "<group>";
+		};
+		ADFE46741E12386D008260AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE46751E12386D008260AB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADFE468D1E12386D008260AB /* SFMediatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE468E1E12386D008260AB /* SFMediatorTests.m */,
+				ADFE46901E12386D008260AB /* Info.plist */,
+			);
+			path = SFMediatorTests;
+			sourceTree = "<group>";
+		};
+		ADFE46981E12386D008260AB /* SFMediatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE46991E12386D008260AB /* SFMediatorUITests.m */,
+				ADFE469B1E12386D008260AB /* Info.plist */,
+			);
+			path = SFMediatorUITests;
+			sourceTree = "<group>";
+		};
+		ADFE46A71E1238DD008260AB /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE46A81E1238EF008260AB /* SFMediator.h */,
+				ADFE46A91E1238EF008260AB /* SFMediator.m */,
+				ADFE46AB1E12401B008260AB /* SFMediatorTarget.h */,
+				ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADFE46701E12386D008260AB /* SFMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE469E1E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediator" */;
+			buildPhases = (
+				ADFE466D1E12386D008260AB /* Sources */,
+				ADFE466E1E12386D008260AB /* Frameworks */,
+				ADFE466F1E12386D008260AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFMediator;
+			productName = SFMediator;
+			productReference = ADFE46711E12386D008260AB /* SFMediator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADFE46891E12386D008260AB /* SFMediatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE46A11E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediatorTests" */;
+			buildPhases = (
+				ADFE46861E12386D008260AB /* Sources */,
+				ADFE46871E12386D008260AB /* Frameworks */,
+				ADFE46881E12386D008260AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFE468C1E12386D008260AB /* PBXTargetDependency */,
+			);
+			name = SFMediatorTests;
+			productName = SFMediatorTests;
+			productReference = ADFE468A1E12386D008260AB /* SFMediatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADFE46941E12386D008260AB /* SFMediatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADFE46A41E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediatorUITests" */;
+			buildPhases = (
+				ADFE46911E12386D008260AB /* Sources */,
+				ADFE46921E12386D008260AB /* Frameworks */,
+				ADFE46931E12386D008260AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADFE46971E12386D008260AB /* PBXTargetDependency */,
+			);
+			name = SFMediatorUITests;
+			productName = SFMediatorUITests;
+			productReference = ADFE46951E12386D008260AB /* SFMediatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADFE46691E12386D008260AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = sofach;
+				TargetAttributes = {
+					ADFE46701E12386D008260AB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+					};
+					ADFE46891E12386D008260AB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADFE46701E12386D008260AB;
+					};
+					ADFE46941E12386D008260AB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EWE36XWL9D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = ADFE46701E12386D008260AB;
+					};
+				};
+			};
+			buildConfigurationList = ADFE466C1E12386D008260AB /* Build configuration list for PBXProject "SFMediator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADFE46681E12386D008260AB;
+			productRefGroup = ADFE46721E12386D008260AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADFE46701E12386D008260AB /* SFMediator */,
+				ADFE46891E12386D008260AB /* SFMediatorTests */,
+				ADFE46941E12386D008260AB /* SFMediatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADFE466F1E12386D008260AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE46841E12386D008260AB /* LaunchScreen.storyboard in Resources */,
+				ADFE46811E12386D008260AB /* Assets.xcassets in Resources */,
+				ADFE467F1E12386D008260AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46881E12386D008260AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46931E12386D008260AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADFE466D1E12386D008260AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE46B01E12528B008260AB /* DemoMediatorTarget.m in Sources */,
+				ADFE467C1E12386D008260AB /* ViewController.m in Sources */,
+				ADFE46AA1E1238EF008260AB /* SFMediator.m in Sources */,
+				ADFE46AD1E12401B008260AB /* SFMediatorTarget.m in Sources */,
+				ADFE46791E12386D008260AB /* AppDelegate.m in Sources */,
+				ADFE46761E12386D008260AB /* main.m in Sources */,
+				ADFE46B31E125322008260AB /* SFMediator+Demo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46861E12386D008260AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE468F1E12386D008260AB /* SFMediatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADFE46911E12386D008260AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADFE469A1E12386D008260AB /* SFMediatorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADFE468C1E12386D008260AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFE46701E12386D008260AB /* SFMediator */;
+			targetProxy = ADFE468B1E12386D008260AB /* PBXContainerItemProxy */;
+		};
+		ADFE46971E12386D008260AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADFE46701E12386D008260AB /* SFMediator */;
+			targetProxy = ADFE46961E12386D008260AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADFE467D1E12386D008260AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFE467E1E12386D008260AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADFE46821E12386D008260AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADFE46831E12386D008260AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADFE469C1E12386D008260AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADFE469D1E12386D008260AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADFE469F1E12386D008260AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADFE46A01E12386D008260AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADFE46A21E12386D008260AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFMediator.app/SFMediator";
+			};
+			name = Debug;
+		};
+		ADFE46A31E12386D008260AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFMediator.app/SFMediator";
+			};
+			name = Release;
+		};
+		ADFE46A51E12386D008260AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFMediator;
+			};
+			name = Debug;
+		};
+		ADFE46A61E12386D008260AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EWE36XWL9D;
+				INFOPLIST_FILE = SFMediatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sofach.SFMediatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SFMediator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADFE466C1E12386D008260AB /* Build configuration list for PBXProject "SFMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE469C1E12386D008260AB /* Debug */,
+				ADFE469D1E12386D008260AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE469E1E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE469F1E12386D008260AB /* Debug */,
+				ADFE46A01E12386D008260AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE46A11E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE46A21E12386D008260AB /* Debug */,
+				ADFE46A31E12386D008260AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADFE46A41E12386D008260AB /* Build configuration list for PBXNativeTarget "SFMediatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADFE46A51E12386D008260AB /* Debug */,
+				ADFE46A61E12386D008260AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADFE46691E12386D008260AB /* Project object */;
+}
