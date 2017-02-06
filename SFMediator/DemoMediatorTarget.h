@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SFMediatorTarget.h"
+#import "SFMediator.h"
 
-@interface DemoMediatorTarget : SFMediatorTarget
+@interface DemoMediatorTarget : NSObject <SFMediateTargetProtocol>
 
 @end

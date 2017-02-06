@@ -6,18 +6,34 @@
 //  Copyright © 2016年 sofach. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "SFMediatorTarget.h"
+#import <UIKit/UIKit.h>
 
-//参考CTMediator的一个中间件，把mediator和target规范化，action只是一个string，没有关联url，放在params中，
+//参考CTMediator的一个中间件，把target和action规范化
+//每个模块需要一个实现协议SFMediateTargetProtocol的target，在target中实现各种action逻辑
 @interface SFMediator : NSObject
 
-//target的前缀，比如prefix=SF，那么targetName=Mediator或SFMediator都能找到SFMediator这个Class
+//target的前缀，比如prefix=SF，那么targetName=DemoTarget或SFDemoTarget都能找到SFDemoTarget这个Class
 @property (strong, nonatomic) NSString *prefix;
 
 + (instancetype)sharedInstence;
 
-- (id)mediateTarget:(NSString *)targetName params:(NSDictionary *)params;
+//这个是app内部调用的,targetName必须是class名，支持prefix
+- (id)mediateTarget:(NSString *)targetName action:(NSString *)action params:(NSDictionary *)params;
+
+//这个是app外部调用的
 - (id)mediateRemoteUrl:(NSURL *)url;
+
+@end
+
+
+//这个是target的协议
+@protocol SFMediateTargetProtocol <NSObject>
+
+//处理actionName
+- (id)mediateAction:(NSString *)actionName params:(NSDictionary *)params;
+
+@optional
+//是否支持远程调用
+- (id)canMediateRemoteAction:(NSString *)action params:(NSDictionary *)params;
 
 @end

@@ -13,11 +13,10 @@
 - (id)mediate_DemoWithTitle:(NSString *)title color:(UIColor *)color isPresent:(BOOL)present {
     
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    [param setObject:@"presentViewController" forKey:SFMediatorParamKeyAction];
     [param setObject:title forKey:@"title"];
     [param setObject:[NSNumber numberWithBool:present] forKey:@"isPresent"];
     [param setObject:color forKey:@"color"];
-    return [self mediateTarget:@"MediatorTarget" params:param];
+    return [self mediateTarget:@"MediatorTarget" action:@"presentViewController" params:param];
 }
 
 @end

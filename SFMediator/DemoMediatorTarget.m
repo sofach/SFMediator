@@ -11,9 +11,10 @@
 
 @implementation DemoMediatorTarget
 
-- (id)mediateTargetWithParams:(NSDictionary *)params {
-    NSString *action = params[SFMediatorParamKeyAction];
-    if ([action isEqualToString:@"presentViewController"]) {
+
+- (id)mediateAction:(NSString *)actionName params:(NSDictionary *)params {
+
+    if ([actionName isEqualToString:@"presentViewController"]) {
         NSString *title = params[@"title"];
         BOOL isPresent = [params[@"isPresent"] boolValue];
         
@@ -23,18 +24,20 @@
         [myView setTitle:title color:params[@"color"] isPresent:isPresent];
         return myView;
     } else {
-        return [super mediateTargetWithParams:params];
+        NSLog(@"[error] action:%@ not support", actionName);
+        return nil;
     }
+
 }
 
-- (id)canMediateTargetFromRemoteWithParams:(NSDictionary *)params {
-    NSString *action = params[SFMediatorParamKeyAction];
-    if ([action isEqualToString:@"presentViewController"]) {
+- (id)canMediateRemoteAction:(NSString *)actionName params:(NSDictionary *)params {
+
+    if ([actionName isEqualToString:@"presentViewController"]) {
         return @1;
     } else {
-        return [super mediateTargetWithParams:params];
+        return @0;
     }
-
 }
+
 
 @end

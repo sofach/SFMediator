@@ -17,7 +17,6 @@
 		ADFE468F1E12386D008260AB /* SFMediatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE468E1E12386D008260AB /* SFMediatorTests.m */; };
 		ADFE469A1E12386D008260AB /* SFMediatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46991E12386D008260AB /* SFMediatorUITests.m */; };
 		ADFE46AA1E1238EF008260AB /* SFMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46A91E1238EF008260AB /* SFMediator.m */; };
-		ADFE46AD1E12401B008260AB /* SFMediatorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */; };
 		ADFE46B01E12528B008260AB /* DemoMediatorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46AF1E12528B008260AB /* DemoMediatorTarget.m */; };
 		ADFE46B31E125322008260AB /* SFMediator+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFE46B21E125322008260AB /* SFMediator+Demo.m */; };
 /* End PBXBuildFile section */
@@ -59,8 +58,6 @@
 		ADFE469B1E12386D008260AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADFE46A81E1238EF008260AB /* SFMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMediator.h; sourceTree = "<group>"; };
 		ADFE46A91E1238EF008260AB /* SFMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMediator.m; sourceTree = "<group>"; };
-		ADFE46AB1E12401B008260AB /* SFMediatorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMediatorTarget.h; sourceTree = "<group>"; };
-		ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFMediatorTarget.m; sourceTree = "<group>"; };
 		ADFE46AE1E12528B008260AB /* DemoMediatorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMediatorTarget.h; sourceTree = "<group>"; };
 		ADFE46AF1E12528B008260AB /* DemoMediatorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMediatorTarget.m; sourceTree = "<group>"; };
 		ADFE46B11E125322008260AB /* SFMediator+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFMediator+Demo.h"; sourceTree = "<group>"; };
@@ -165,8 +162,6 @@
 			children = (
 				ADFE46A81E1238EF008260AB /* SFMediator.h */,
 				ADFE46A91E1238EF008260AB /* SFMediator.m */,
-				ADFE46AB1E12401B008260AB /* SFMediatorTarget.h */,
-				ADFE46AC1E12401B008260AB /* SFMediatorTarget.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -311,7 +306,6 @@
 				ADFE46B01E12528B008260AB /* DemoMediatorTarget.m in Sources */,
 				ADFE467C1E12386D008260AB /* ViewController.m in Sources */,
 				ADFE46AA1E1238EF008260AB /* SFMediator.m in Sources */,
-				ADFE46AD1E12401B008260AB /* SFMediatorTarget.m in Sources */,
 				ADFE46791E12386D008260AB /* AppDelegate.m in Sources */,
 				ADFE46761E12386D008260AB /* main.m in Sources */,
 				ADFE46B31E125322008260AB /* SFMediator+Demo.m in Sources */,

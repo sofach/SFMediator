@@ -46,6 +46,13 @@
     return self;
 }
 
+- (id)performSelector:(SEL)aSelector target:(id)target action:(NSString *)action params:(NSDictionary *)params {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+    return [target performSelector:aSelector withObject:action withObject:params];
+#pragma clang diagnostic pop
+}
+
 - (id)targetFromTargetName:(NSString *)targetName {
     if (!targetName) {
         return nil;
@@ -68,26 +75,42 @@
     return target;
 }
 
-- (id)mediateTarget:(NSString *)targetName params:(NSDictionary *)params {
+
+#pragma mark - public method
+- (id)mediateTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
+    return [self mediateTarget:targetName action:actionName isRemote:NO params:params];
+}
+
+- (id)mediateTarget:(NSString *)targetName action:(NSString *)actionName isRemote:(BOOL)isRemote params:(NSDictionary *)params {
     
-    id target = [self targetFromTargetName:targetName];
-    if (!target) {
-        NSLog(@"mediate target not found:%@", targetName);
+    if (!targetName || !actionName) {
+        NSLog(@"[warn] mediate target or action can't be nil");
         return nil;
     }
     
-    id fromRemote = params[SFMediatorParamKeyFromRemote];
-    if (fromRemote && [fromRemote boolValue]) {
-        SEL canMediateAction = NSSelectorFromString(@"canMediateTargetFromRemoteWithParams:");
-        if (![target respondsToSelector:canMediateAction] || ![[self performSelector:canMediateAction target:target params:params] boolValue]) {
+    id target = [self targetFromTargetName:targetName];
+    if (!target) {
+        NSLog(@"[error] mediate target not found:%@", targetName);
+        return nil;
+    }
+    
+    //远程调用，需要先验证这个action是否支持远程调用
+    if (isRemote) {
+        
+        SEL canMediateSelector = NSSelectorFromString(@"canMediateRemoteAction:params:");
+        if (![target respondsToSelector:canMediateSelector] || ![[self performSelector:canMediateSelector target:target action:actionName params:params] boolValue]) {
+            
+            NSLog(@"[error] mediate target:%@ can't perform remote action:%@", targetName, actionName);
             return nil;
         }
     }
     
-    SEL action = NSSelectorFromString(@"mediateTargetWithParams:");
-    if ([target respondsToSelector:action]) {
-        return [self performSelector:action target:target params:params];
+    SEL mediateSelector = NSSelectorFromString(@"mediateAction:params:");
+    if ([target respondsToSelector:mediateSelector]) {
+        
+        return [self performSelector:mediateSelector target:target action:actionName params:params];
     } else {
+        NSLog(@"[warn] mediate target：%@ not implements mediateTargetWithParams:", targetName);
         return nil;
     }
 }
@@ -100,16 +123,8 @@
     NSString *targetName = url.host;
     NSString *actionName = [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:[SFMediator paramsFromUrl:url]];
-    [params setObject:actionName forKey:SFMediatorParamKeyAction];
-    [params setObject:@1 forKey:SFMediatorParamKeyFromRemote];
-    return [self mediateTarget:targetName params:params];
-}
 
-- (id)performSelector:(SEL)aSelector target:(id)target params:(NSDictionary *)params {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    return [target performSelector:aSelector withObject:params];
-#pragma clang diagnostic pop
+    return [self mediateTarget:targetName action:actionName isRemote:YES params:params];
 }
 
 @end
