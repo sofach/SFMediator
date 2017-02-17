@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SFMediator.h"
+#import "DemoMediatorTarget.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [SFMediator sharedInstence].prefix = @"Demo";
-
+    
+    [[SFMediator sharedInstence] registerTarget:@"MediatorTarget" className:NSStringFromClass([DemoMediatorTarget class])];
     NSString *url = [NSString stringWithFormat:@"demo://MediatorTarget/presentViewController?title=%@&isPresent=1", @"dismiss"];
     UIViewController *vc = [[SFMediator sharedInstence] mediateRemoteUrl:[NSURL URLWithString:url]];
     [self.window.rootViewController presentViewController:vc animated:YES completion:nil];

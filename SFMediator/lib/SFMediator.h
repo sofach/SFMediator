@@ -12,10 +12,9 @@
 //每个模块需要一个实现协议SFMediateTargetProtocol的target，在target中实现各种action逻辑
 @interface SFMediator : NSObject
 
-//target的前缀，比如prefix=SF，那么targetName=DemoTarget或SFDemoTarget都能找到SFDemoTarget这个Class
-@property (strong, nonatomic) NSString *prefix;
-
 + (instancetype)sharedInstence;
+
+- (BOOL)registerTarget:(NSString *)targetName className:(NSString *)className;
 
 //这个是app内部调用的,targetName必须是class名，支持prefix
 - (id)mediateTarget:(NSString *)targetName action:(NSString *)action params:(NSDictionary *)params;

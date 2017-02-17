@@ -11,6 +11,7 @@
 @interface SFMediator ()
 
 @property (strong, nonatomic) NSCache *cachedTarget;
+@property (strong, nonatomic) NSMutableDictionary *targetClassMap;
 
 @end
 
@@ -42,6 +43,7 @@
     self = [super init];
     if (self) {
         _cachedTarget = [[NSCache alloc] init];
+        _targetClassMap = [NSMutableDictionary dictionaryWithCapacity:10];
     }
     return self;
 }
@@ -61,11 +63,9 @@
     if (target) {
         return target;
     }
+    NSString *clsName = [self.targetClassMap objectForKey:targetName];
+    Class targetClass = NSClassFromString(clsName);
     
-    Class targetClass = NSClassFromString(targetName);
-    if (!targetClass && _prefix) {
-        targetClass = NSClassFromString([NSString stringWithFormat:@"%@%@", _prefix, targetName]);
-    }
     if (!targetClass) {
         return nil;
     }
@@ -77,6 +77,25 @@
 
 
 #pragma mark - public method
+- (BOOL)registerTarget:(NSString *)targetName className:(NSString *)className {
+
+    if (!targetName || !className) {
+        NSLog(@"[warn] mediate target name or class name can't be nil");
+        return NO;
+    }
+    
+    Class cls = NSClassFromString(className);
+    if (!cls) {
+        return NO;
+    }
+    if ([self.targetClassMap objectForKey:targetName]) {
+        NSLog(@"[warn] mediate target name:%@ already exist with class:%@", targetName, className);
+        return NO;
+    }
+    [self.targetClassMap setObject:className forKey:targetName];
+    return YES;
+}
+
 - (id)mediateTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params {
     return [self mediateTarget:targetName action:actionName isRemote:NO params:params];
 }
